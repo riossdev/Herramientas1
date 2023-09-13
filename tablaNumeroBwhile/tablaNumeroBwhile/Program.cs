@@ -4,24 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace factorial
+namespace tablaNumeroBwhile
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             int num = 0;
-            int factorial = 1;
-
-            Console.WriteLine("Factorial de un numero");
-            Console.WriteLine("Ingresa el numero ");
+            Console.WriteLine("**  Tabla de Multiplicar de un Numéro ** ");
+            Console.WriteLine("Ingrese el numero para saber su tabla de multiplicar ");
             num = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= num; i++)
+            int i = 1;
+            while (i <= 10)
             {
-                factorial *= i;
+                Console.WriteLine(num + " x " + i + " = " + (num * i));
+                i++;
             }
-            Console.WriteLine(factorial);
             Console.ReadKey();
         }
     }
